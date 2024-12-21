@@ -44,8 +44,8 @@ while True:
 	rate(1 / dt)
 	collision()
 
-	ball.v = ball.v + ball.a * dt
-	ball.pos = ball.pos + ball.v * dt
+	ball.v += + ball.a * dt
+	ball.pos += ball.v * dt
 
-	t = t + dt
+	t += dt
 

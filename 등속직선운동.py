@@ -17,5 +17,5 @@ attach_arrow(ball, "v", shaftwidth=0.1, color=color.green)
 # 시뮬레이션
 while t < 5:
 	rate(1 / dt)
-	ball.pos = ball.pos + ball.v * dt
-	t = t + dt
+	ball.pos += ball.v * dt
+	t += dt

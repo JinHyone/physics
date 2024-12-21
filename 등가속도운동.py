@@ -21,7 +21,7 @@ attach_trail(ball, type='points', pps=5)
 while t < 5:
 	rate(1 / dt)
 
-	ball.v = ball.v + ball.a * dt
-	ball.pos = ball.pos + ball.v * dt
+	ball.v += ball.a * dt
+	ball.pos += ball.v * dt
 
-	t = t + dt
+	t += dt

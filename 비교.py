@@ -52,8 +52,8 @@ while True:
 
 	for ball in balls:
 		collision(ball)
-		ball.v = ball.v + ball.a * dt
-		ball.pos = ball.pos + ball.v * dt
+		ball.v += ball.a * dt
+		ball.pos += ball.v * dt
 
 	t = t + dt
 
