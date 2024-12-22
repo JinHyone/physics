@@ -11,7 +11,7 @@ balls = []
 ball1 = sphere(radius=0.2)
 ball1.name = 'ball1'
 ball1.pos = vector(-3, 3, 0)
-ball1.v = vector(1, 0, 0)
+ball1.v = vector(2, 0, 0)
 ball1.a = vector(0, -2, 0)
 balls.append(ball1)
 
@@ -55,5 +55,5 @@ while True:
 		ball.v += ball.a * dt
 		ball.pos += ball.v * dt
 
-	t = t + dt
+	t += dt
 
