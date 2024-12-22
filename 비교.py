@@ -43,12 +43,19 @@ def collision(ball):
 		c += 1
 
 
+flag = False
+
 # 시뮬레이션
 while True:
 	rate(1 / dt)
 
+	if flag:
+		continue
+
 	if c == 2:
-		break
+		ball1_time = text(text=f'b1: {round(t, 2)}', align='center', pos=vec(-5, 2, 0), billboard=True, height=0.4)
+		ball2_time = text(text=f'b2: {round(t, 2)}', align='center', pos=vec(-3, 2, 0), billboard=True, height=0.4)
+		continue
 
 	for ball in balls:
 		collision(ball)
